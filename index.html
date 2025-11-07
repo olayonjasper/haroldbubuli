@@ -1,0 +1,106 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>POTFOLIO NI PLONGAX</title>
+  <style>
+    :root{--accent:#1f6feb;--bg:#0f1724;--card:#0b1220}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,#041021 0%,#071428 100%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:900px;margin:48px auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{
+      width:88px;
+      height:88px;
+      border-radius:14px;
+      background:url('plongax.jpg') center/cover no-repeat;
+    }
+    h1{margin:0 0 6px;font-size:26px}
+    p.lead{margin:0;color:#bcd5f0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);border-radius:12px;padding:16px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .proj{padding:10px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03)}
+    a.button{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#6bd4ff);color:#021428;text-decoration:none;font-weight:600}
+    footer{margin-top:26px;color:#90a7d0;font-size:13px}
+    @media(min-width:760px){ .grid{grid-template-columns:1fr 360px} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar"></div>
+      <div>
+        <h1>HAROLD BUBULI</h1>
+        <p class="lead">Videographer • Photographer • Vivamax Actor — malangis pero mabangis.</p>
+        <div style="margin-top:8px">
+          <a href="mailto:you@example.com" class="button">Contact me</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div>
+        <div class="card">
+          <h3>About</h3>
+          <p>Si joy lang ang mahal 123456 6969</p>
+          <p><strong>Location:</strong> BagdadOngyiu • <strong>Open to:</strong> freelance & Model</p>
+          <div style="margin-top:8px">
+            <a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Featured projects</h3>
+          <div class="projects">
+            <div class="proj">
+              <strong>Project A</strong>
+              <div class="tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+              <p style="margin:8px 0 0;font-size:14px">Short one-line description. Link to repo or demo.</p>
+            </div>
+            <div class="proj">
+              <strong>Project B</strong>
+              <div class="tags"><span class="tag">React</span><span class="tag">API</span></div>
+              <p style="margin:8px 0 0;font-size:14px">Short one-line description.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Skills</h3>
+          <div class="tags">
+            <span class="tag">Mapagmahal</span><span class="tag">Masarap</span><span class="tag">Jubinggit</span><span class="tag">Magselosbisanwalaykami</span><span class="tag">Plongtography</span>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Quick contact</h3>
+          <p>Email: plongtography@gmail.com</p>
+          <p>Phone: +63 9XX XXX XXXX</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Resume</h3>
+          <p>Download PDF — <a href="#">link</a></p>
+          <h4 style="margin-top:10px">Availability</h4>
+          <p>Open to new projects — available after Dec 2025</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name — Built with ❤️ · <a href="#">Privacy</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
