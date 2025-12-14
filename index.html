@@ -1,10 +1,9 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PLONGTOGRAPHY</title>
+  <title>POTFOLIO NI PLONGAX</title>
   <style>
     :root{--accent:#1f6feb;--bg:#0f1724;--card:#0b1220}
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,#041021 0%,#071428 100%);color:#e6eef8;line-height:1.5}
@@ -14,7 +13,7 @@
       width:88px;
       height:88px;
       border-radius:14px;
-      background:url('PLONGAX.jpg') center/cover no-repeat;
+      background:url('plongax.jpg') center/cover no-repeat;
     }
     h1{margin:0 0 6px;font-size:26px}
     p.lead{margin:0;color:#bcd5f0}
@@ -26,6 +25,18 @@
     .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03)}
     a.button{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#6bd4ff);color:#021428;text-decoration:none;font-weight:600}
     footer{margin-top:26px;color:#90a7d0;font-size:13px}
+    
+    /* STYLE PARA SA MGA LINKS (VIOLET/PURPLE) */
+    .custom-link {
+        color: #8b5cf6;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .custom-link:hover {
+        text-decoration: underline;
+        color: #a78bfa;
+    }
+
     @media(min-width:760px){ .grid{grid-template-columns:1fr 360px} }
   </style>
 </head>
@@ -37,7 +48,7 @@
         <h1>HAROLD BUBULI</h1>
         <p class="lead">Videographer • Photographer • Vivamax Actor — malangis pero mabangis.</p>
         <div style="margin-top:8px">
-          <a href="mailto:you@example.com" class="button">Contact me</a>
+          <a href="mailto:plongtography@gmail.com" class="button">Contact me</a>
         </div>
       </div>
     </header>
@@ -46,26 +57,26 @@
       <div>
         <div class="card">
           <h3>About</h3>
-          <p>Silingan ni abrahamam, pero ayaw nako pangitae kay ni abroad nato.</p>
+          <p>SI MICHELLE LANG ANG MAHAL</p>
           <p><strong>Location:</strong> BagdadOngyiu • <strong>Open to:</strong> freelance & Model</p>
+          
           <div style="margin-top:8px">
-            <a href="https://github.com/yourhandle" target="_blank" rel="noopener">Vivamax</a> ·
-            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">Sulasok</a>
+            <a href="https://www.vivamax.net" target="_blank" rel="noopener" class="custom-link">Vivamax</a> · 
+            <a href="https://sulasok.cz" target="_blank" rel="noopener" class="custom-link">Sulasok</a>
           </div>
         </div>
-
         <div class="card" style="margin-top:12px">
           <h3>Featured projects</h3>
           <div class="projects">
             <div class="proj">
               <strong>Project A</strong>
-              <div class="tags"><span class="tag">Sulasok</span><span class="tag">Vivamax</span></div>
-              <p style="margin:8px 0 0;font-size:14px">Alam mo ha. Link to repo or demo.</p>
+              <div class="tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+              <p style="margin:8px 0 0;font-size:14px">Short one-line description. Link to repo or demo.</p>
             </div>
             <div class="proj">
               <strong>Project B</strong>
-              <div class="tags"><span class="tag">Videos</span><span class="tag">Photo</span></div>
-              <p style="margin:8px 0 0;font-size:14px">Events Projects.</p>
+              <div class="tags"><span class="tag">React</span><span class="tag">API</span></div>
+              <p style="margin:8px 0 0;font-size:14px">Short one-line description.</p>
             </div>
           </div>
         </div>
@@ -82,7 +93,7 @@
         <div class="card">
           <h3>Quick contact</h3>
           <p>Email: plongtography@gmail.com</p>
-          <p>Phone: +63 9939551875</p>
+          <p>Phone: +63 9XX XXX XXXX</p>
         </div>
 
         <div class="card" style="margin-top:12px">
@@ -95,7 +106,7 @@
     </section>
 
     <footer>
-      © <span id="year"></span> Your Name — Built with ❤️ · <a href="#">Privacy</a>
+      © <span id="year"></span> Harold Bubuli — Built with ❤️
     </footer>
   </main>
 
@@ -104,5 +115,3 @@
   </script>
 </body>
 </html>
-
-
